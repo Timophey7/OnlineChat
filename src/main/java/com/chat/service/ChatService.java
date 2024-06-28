@@ -1,4 +1,4 @@
-package com.chat;
+package com.chat.service;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
@@ -10,6 +10,6 @@ import org.springframework.stereotype.Service;
 @FieldDefaults(level = AccessLevel.PRIVATE,makeFinal = true)
 public class ChatService {
 
-    ChatR
+    ChatRe
 
 }

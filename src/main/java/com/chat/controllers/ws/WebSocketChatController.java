@@ -13,7 +13,7 @@ public class WebSocketChatController {
 
     @MessageMapping(CREATE_CHAT)
     public void setCreateChat(String chatName){
-
+        
     }
 
 
