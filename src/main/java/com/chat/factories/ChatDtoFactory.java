@@ -10,11 +10,12 @@ import com.chat.model.Chat;
 @Component
 public class ChatDtoFactory {
     public ChatDto makeChatDto(Chat chat) {
-        return ChatDto.builder()
-                .id(chat.getId())
-                .name(chat.getName())
-                .messages(chat.getMessages())
-                .users(chat.getUsers())
-                .build();
+        ChatDto chatDto = new ChatDto();
+        chatDto.setId(chat.getId());
+        chatDto.setName(chat.getName());
+        chatDto.setChatCode(chat.getChatCode());
+        chatDto.setUsers(chat.getUsers());
+        chatDto.setMessages(chat.getMessages());
+        return chatDto;
     }
 }
